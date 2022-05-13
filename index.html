@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tamagotchi</title>
+</head>
+<body>
+    
+    <!-- status bar -->
+    <div>
+        <div id="health"></div>
+        <div id="fun"></div>
+        <div id="hungry"></div>
+        <div id="bath"></div>
+        <div id="poop"></div>
+        <div id="sleep"></div>
+    </div>
+
+    <!-- tamagotchi -->
+    <div class="tamagotchi">
+    </div>
+
+    <!-- actions -->
+    <div>
+        <!-- basic stuff -->
+        <button onclick="myTamagotchi.feed()">Feed</button>
+        <button onclick="myTamagotchi.cure()">Cure</button>
+        <button onclick="myTamagotchi.bath()">Bath</button>
+        <button onclick="myTamagotchi.poop()">Poop</button>
+        <button onclick="myTamagotchi.sleep()">Sleep</button>
+
+        <!-- fun stuff -->
+        <button onclick="myTamagotchi.read()">Read</button>
+        <button onclick="myTamagotchi.dance()">Dance</button>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
