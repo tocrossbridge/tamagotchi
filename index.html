@@ -5,17 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <!-- status bar -->
-    <div>
-        <div id="health"></div>
-        <div id="fun"></div>
-        <div id="hungry"></div>
-        <div id="bath"></div>
-        <div id="poop"></div>
-        <div id="sleep"></div>
+    <div class="status__container">
+        <div>
+            <label class="status__label">Health</label>
+            <div id="health"></div>
+        </div>
+
+        <div>
+            <label class="status__label">Fun</label>
+            <div id="fun"></div>
+        </div>
+
+        <div>
+            <label class="status__label">Hungry</label>
+            <div id="hungry"></div>
+        </div>
+
+        <div>
+            <label class="status__label">Bath</label>
+            <div id="bath"></div>
+        </div>
+
+        <div>
+            <label class="status__label">Poop</label>
+            <div id="poop"></div>
+        </div>
+
+        <div>
+            <label class="status__label">Sleep</label>
+            <div id="sleep"></div>
+        </div>
     </div>
 
     <!-- tamagotchi -->
@@ -36,6 +60,6 @@
         <button onclick="myTamagotchi.dance()">Dance</button>
     </div>
 
-    <script type="module" src="./main.js"></script>
+    <script src="Tamagotchi.js"></script>
 </body>
 </html>
