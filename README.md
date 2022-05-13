@@ -1,0 +1,1 @@
+So, it's my first tamagotchi and it ain't much work but I'm proud to make it from scratch without tutorialzim, "fazendo tudo sozinho sem ajuda de ninguém" (como diria o grandiossíssimo Gustavo hahahaha)
