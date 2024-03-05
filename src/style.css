@@ -1,0 +1,33 @@
+body {
+  display: grid;
+  height: 80vh;
+
+  font-size: 14px;
+}
+
+button {
+  padding: 20px 10px;
+
+  border: none;
+  border-radius: 1em;
+
+  font-size: 1rem;
+}
+
+#btnIniciar {
+  margin: auto;
+}
+
+#tamagotchi__box {
+  display: none;
+  max-width: 600px;
+  margin: auto;
+}
+
+#tamagotchi {
+  width: 300px;
+}
+
+#tamagotchi_msg {
+  font-size: 2em;
+}
