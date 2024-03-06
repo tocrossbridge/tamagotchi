@@ -1,3 +1,8 @@
+:root {
+  --game-box__width: 600px;
+  --game-box__height: 400px;
+}
+
 body {
   display: grid;
   height: 80vh;
@@ -24,14 +29,58 @@ button:hover {
 
 #tamagotchi__box {
   display: none;
-  max-width: 600px;
+  max-width: var(--game-box__width);
+  height: var(--game-box__height);
   margin: auto;
 }
 
+/* Tamagotchi */
 #tamagotchi {
-  width: 300px;
+  width: 200px;
+}
+
+.tamagotchi__itself {
+  height: calc(var(--game-box__height) - 50px);
+  display: flex;
+}
+
+.tamagotchi__itself > img {
+  margin: auto;
+}
+
+/* Mensagem */
+.tamagotchi_msg__box {
+  height: 45px;
+  width: calc(var(--game-box__width) - 50px);
+  display: flex;
+  margin: auto;
+
+  border: 1px solid grey;
+
+  background: #f5f5f5;
 }
 
 #tamagotchi_msg {
-  font-size: 2em;
+  margin: auto;
+  font-size: 16px;
+}
+
+/* Tamagotchi quarto */
+.tamagotchi__room {
+  width: 600px;
+  height: 400px;
+
+  border: 1px solid black;
+  border-radius: 1em;
+
+  background-color: pink;
+}
+
+/* Estados */
+.estados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 1em;
+
+  padding: .5rem;
 }

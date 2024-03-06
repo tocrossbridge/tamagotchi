@@ -13,20 +13,43 @@
     <button id="btnIniciar">Iniciar</button>
 
     <div id="tamagotchi__box">
-      <div>
-        Minha fome:
-        <span id="alimentacao"></span>
+      <!-- Propriedades -->
+      <div class="estados">
+        <div>
+          Status:
+          <span id="estados"></span>
+        </div>
+        <div>
+          Fome:
+          <span id="alimentacao"></span>
+        </div>
+        <div>
+          Sono:
+          <span id="sono"></span>
+        </div>
       </div>
 
-      <span id="tamagotchi_msg"></span>
+      <div class="tamagotchi__room">
 
-      <img src="" id="tamagotchi" />
+        <!-- Imagem do tamagotchi -->
+        <div class="tamagotchi__itself">
+          <img src="" id="tamagotchi" />
+        </div>
 
-      <button id="btnAlimentar">Alimentar</button>
+        <!-- Mensagem do tamagotchi -->
+        <div class="tamagotchi_msg__box">
+          <span id="tamagotchi_msg"></span>
+        </div>
+      </div>
+
+      <!-- Botões de ação -->
+      <div id="btns-action">
+        <button id="btnAlimentar">Alimentar</button>
+        <button id="btnDormir">Descansar</button>
+      </div>
     </div>
 
     <script src="./src/js/index.js"></script>
-    <script src="./src/js/eventHandlers.js"></script>
   </body>
 
 </html>
